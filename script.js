@@ -8,8 +8,8 @@ let iniciarJogoBtn = document.getElementById('iniciarJogo');
 let jogador = {
     x: 50,
     y: 0,
-    largura: 105, // Aumentar o tamanho do jogador
-    altura: 145, // Aumentar o tamanho do jogador
+    largura: 100, // Aumentar o tamanho do jogador
+    altura: 130, // Aumentar o tamanho do jogador
     velocidade: 0,
     gravidade: 0.5,
     pulosRestantes: 2
@@ -85,9 +85,9 @@ function adicionarObstaculos() {
         for (let i = 0; i < obstaculosPorFase[faseAtual]; i++) {
             obstaculos.push({
                 x: canvas.width,
-                y: canvas.height - 90, // Ajustar a altura dos obstáculos
-                largura: 115, // Aumentar o tamanho dos obstáculos
-                altura: 115 // Aumentar o tamanho dos obstáculos
+                y: canvas.height - 110, // Ajustar a altura dos obstáculos
+                largura: 120, // Aumentar o tamanho dos obstáculos
+                altura: 120// Aumentar o tamanho dos obstáculos
             });
         }
 
