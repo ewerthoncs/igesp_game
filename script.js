@@ -11,7 +11,7 @@ let jogador = {
     largura: 110, // Aumentar o tamanho do jogador
     altura: 130, // Aumentar o tamanho do jogador
     velocidade: 0,
-    gravidade: 0.75,
+    gravidade: 0.25,
     pulosRestantes: 2
 };
 let obstaculos = [];
