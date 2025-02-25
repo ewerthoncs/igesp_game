@@ -15,7 +15,7 @@ let jogador = {
     pulosRestantes: 2
 };
 let obstaculos = [];
-let velocidadeJogo = 4; // Aumentar a velocidade do jogo
+let velocidadeJogo = 3; // Aumentar a velocidade do jogo
 let pontuacao = 0;
 let imagemJogador = new Image();
 let imagemObstaculo = new Image();
@@ -27,7 +27,7 @@ let somHabilitado = false;
 let tempoAtual = 0; // Tempo atual em segundos
 let faseAtual = 0; // Fase atual do loop (0 = 2 segundos, 1 = 3 segundos, etc.)
 let obstaculosPorFase = [1, 2, 2, 1]; // Quantidade de obstáculos por fase
-let tempoPorFase = [3000, 6000, 3500, 5000]; // Tempo por fase em milissegundos
+let tempoPorFase = [3000, 5000, 3500, 5000]; // Tempo por fase em milissegundos
 let ultimaAdicao = Date.now(); // Marca o tempo da última adição de obstáculo
 
 // Carregar imagens
