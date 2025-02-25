@@ -15,7 +15,7 @@ let jogador = {
     pulosRestantes: 2
 };
 let obstaculos = [];
-let velocidadeJogo = 3; // Aumentar a velocidade do jogo
+let velocidadeJogo = 4; // Aumentar a velocidade do jogo
 let pontuacao = 0;
 let imagemJogador = new Image();
 let imagemObstaculo = new Image();
