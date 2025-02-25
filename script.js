@@ -85,7 +85,7 @@ function adicionarObstaculos() {
         for (let i = 0; i < obstaculosPorFase[faseAtual]; i++) {
             obstaculos.push({
                 x: canvas.width,
-                y: canvas.height - 125, // Ajustar a altura dos obstáculos
+                y: canvas.height - 135, // Ajustar a altura dos obstáculos
                 largura: 125, // Aumentar o tamanho dos obstáculos
                 altura: 125// Aumentar o tamanho dos obstáculos
             });
