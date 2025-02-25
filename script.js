@@ -86,8 +86,8 @@ function adicionarObstaculos() {
             obstaculos.push({
                 x: canvas.width,
                 y: canvas.height - 115, // Ajustar a altura dos obstáculos
-                largura: 105, // Aumentar o tamanho dos obstáculos
-                altura: 105// Aumentar o tamanho dos obstáculos
+                largura: 115, // Aumentar o tamanho dos obstáculos
+                altura: 115// Aumentar o tamanho dos obstáculos
             });
         }
 
