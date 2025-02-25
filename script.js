@@ -8,7 +8,7 @@ let iniciarJogoBtn = document.getElementById('iniciarJogo');
 let jogador = {
     x: 50,
     y: 0,
-    largura: 110, // Aumentar o tamanho do jogador
+    largura: 125, // Aumentar o tamanho do jogador
     altura: 175, // Aumentar o tamanho do jogador
     velocidade: 0,
     gravidade: 0.5,
