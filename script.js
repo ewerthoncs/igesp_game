@@ -6,13 +6,13 @@ let habilitarSomBtn = document.getElementById('habilitarSom');
 let iniciarJogoBtn = document.getElementById('iniciarJogo');
 
 let jogador = {
-    x: 75,
+    x: 50,
     y: 0,
     largura: 110, // Aumentar o tamanho do jogador
     altura: 130, // Aumentar o tamanho do jogador
     velocidade: 0,
     gravidade: 0.75,
-    pulosRestantes: 3
+    pulosRestantes: 2
 };
 let obstaculos = [];
 let velocidadeJogo = 3; // Aumentar a velocidade do jogo
@@ -87,7 +87,7 @@ function adicionarObstaculos() {
                 x: canvas.width,
                 y: canvas.height - 115, // Ajustar a altura dos obstáculos
                 largura: 105, // Aumentar o tamanho dos obstáculos
-                altura: 95// Aumentar o tamanho dos obstáculos
+                altura: 105// Aumentar o tamanho dos obstáculos
             });
         }
 
@@ -111,7 +111,7 @@ function atualizarJogo() {
     if (jogador.y + jogador.altura > canvas.height) {
         jogador.y = canvas.height - jogador.altura;
         jogador.velocidade = 0;
-        jogador.pulosRestantes = 3; // Reiniciar pulos ao tocar o chão
+        jogador.pulosRestantes = 2; // Reiniciar pulos ao tocar o chão
     }
 
     desenharJogador();
@@ -190,7 +190,7 @@ function reiniciarJogo() {
     jogoIniciado = false;
     obstaculos = [];
     pontuacao = 0;
-    jogador.pulosRestantes = 3;
+    jogador.pulosRestantes = 2;
     telaInicial.style.display = 'block';
     canvas.style.display = 'none';
     audioFundo.pause();
