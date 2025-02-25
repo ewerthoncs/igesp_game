@@ -11,7 +11,7 @@ let jogador = {
     largura: 120, // Aumentar o tamanho do jogador
     altura: 140, // Aumentar o tamanho do jogador
     velocidade: 0,
-    gravidade: 0.35,
+    gravidade: 0.30,
     pulosRestantes: 2
 };
 let obstaculos = [];
@@ -85,7 +85,7 @@ function adicionarObstaculos() {
         for (let i = 0; i < obstaculosPorFase[faseAtual]; i++) {
             obstaculos.push({
                 x: canvas.width,
-                y: canvas.height - 115, // Ajustar a altura dos obstáculos
+                y: canvas.height - 125, // Ajustar a altura dos obstáculos
                 largura: 125, // Aumentar o tamanho dos obstáculos
                 altura: 125// Aumentar o tamanho dos obstáculos
             });
