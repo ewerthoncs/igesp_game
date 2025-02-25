@@ -8,8 +8,8 @@ let iniciarJogoBtn = document.getElementById('iniciarJogo');
 let jogador = {
     x: 50,
     y: 0,
-    largura: 95, // Aumentar o tamanho do jogador
-    altura: 160, // Aumentar o tamanho do jogador
+    largura: 100, // Aumentar o tamanho do jogador
+    altura: 170, // Aumentar o tamanho do jogador
     velocidade: 0,
     gravidade: 0.5,
     pulosRestantes: 2
@@ -27,7 +27,7 @@ let somHabilitado = false;
 let tempoAtual = 0; // Tempo atual em segundos
 let faseAtual = 0; // Fase atual do loop (0 = 2 segundos, 1 = 3 segundos, etc.)
 let obstaculosPorFase = [1, 2, 2, 1]; // Quantidade de obstáculos por fase
-let tempoPorFase = [2000, 5000, 2500, 4000]; // Tempo por fase em milissegundos
+let tempoPorFase = [3000, 6000, 3500, 5000]; // Tempo por fase em milissegundos
 let ultimaAdicao = Date.now(); // Marca o tempo da última adição de obstáculo
 
 // Carregar imagens
@@ -86,8 +86,8 @@ function adicionarObstaculos() {
             obstaculos.push({
                 x: canvas.width,
                 y: canvas.height - 90, // Ajustar a altura dos obstáculos
-                largura: 93, // Aumentar o tamanho dos obstáculos
-                altura: 110 // Aumentar o tamanho dos obstáculos
+                largura: 110, // Aumentar o tamanho dos obstáculos
+                altura: 100 // Aumentar o tamanho dos obstáculos
             });
         }
 
